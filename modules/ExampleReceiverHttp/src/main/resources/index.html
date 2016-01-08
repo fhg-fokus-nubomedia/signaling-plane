@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Example Receiver Module</title>
+    <script src="http://cdn.sockjs.org/sockjs-0.3.4.min.js"></script>
+    <script src="../vertxbus.js"></script>
+</head>
+<body >
+<script>
+
+	function log(msg) {
+		console.log(msg);
+		//$("#log").append('<div>' + msg + '</div>');
+	}
+	
+	//var eb = new vertx.EventBus('http://localhost:8080/eventbus');
+    var eb = new vertx.EventBus(window.location.protocol + '//' + window.location.hostname + ':' + window.location.port + '/eventbus');
+
+    
+	var EVENT = "org.openxsp.test";
+	console.log("Running example receiver...");
+	eb.onopen = function() {
+	  log("Registering at address " + EVENT);
+	  eb.registerHandler(EVENT, function(message, reply) {
+	    log('received a message: ' + JSON.stringify(message));
+	    var replyMsg = {"status" : "ok"};
+	    
+		reply(replyMsg);
+	  });
+	}
+
+   
+</script>
+</body>
+</html>

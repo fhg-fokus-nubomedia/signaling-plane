@@ -1,0 +1,7 @@
+{
+    "owner": "org.openxsp", 
+    "version": "0.1", 
+    "name": "ExampleReceiverHttp",
+    "preserve-cwd": true,
+    "main":"org.openxsp.example.BridgeServer"
+}

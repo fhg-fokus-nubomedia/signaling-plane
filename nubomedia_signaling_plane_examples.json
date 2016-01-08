@@ -1,0 +1,28 @@
+{
+    "version": "0.1", 
+    "name": "nubomedia_signaling_plane_examples", 
+    "owner": "org.openxsp", 
+    "repositories": [
+        "./modules"
+    ], 
+    "modules": [
+        {
+            "config": {
+            }, 
+            "name": "org.openxsp~ExampleReceiver~0.1"
+        }, 
+        {
+	    "name": "org.openxsp~ExampleReceiverHttp~0.1",
+            "config": {
+            }
+            
+        }, 
+        {
+	    "name": "org.openxsp~ExampleSender~0.1",
+            "config": {
+            }
+            
+        }
+    ], 
+    "global_config": {}
+}

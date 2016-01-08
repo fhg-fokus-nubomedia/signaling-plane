@@ -1,0 +1,14 @@
+{
+    "address": "openxsp.mongopersistor",
+    "host": "localhost",
+    "port": 27017,
+    "username": "ua_default_db",
+    "password": "ua_default_db_pswd",
+    "db_name": "default_db",
+    "pool_size": 10,
+    "use_ssl": false,
+    "read_preference": "primary",
+    "use_mongo_types": false,
+    "socket_timeout": 60000,
+    "auto_connect_retry": true
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="289.5" y="91.0">org.openxsp.java.session.SessionControlAcceptSession</node>
+    <node x="1638.9166666666665" y="91.0">org.openxsp.java.session.SessionControlConfirmSessionEstablishment</node>
+    <node x="1531.1666666666665" y="192.0">org.openxsp.java.session.SessionControlConfirmSessionEstablishmentImpl</node>
+    <node x="1245.1666666666665" y="192.0">org.openxsp.java.session.SessionControlCancelSessionImpl</node>
+    <node x="341.75" y="192.0">org.openxsp.java.session.SessionControlAcceptSessionImpl</node>
+    <node x="1326.1666666666665" y="91.0">org.openxsp.java.session.SessionControlCancelSession</node>
+    <node x="52.75" y="192.0">org.openxsp.java.session.SessionControlUpdateSessionImpl</node>
+    <node x="0.0" y="91.0">org.openxsp.java.session.SessionControlUpdateSession</node>
+    <node x="1054.6666666666665" y="91.0">org.openxsp.java.session.SessionControlCreateSession</node>
+    <node x="656.7708333333333" y="192.0">org.openxsp.java.session.SessionControlEndSessionImpl</node>
+    <node x="818.2083333333333" y="0.0">org.openxsp.java.session.SessionControlMessage</node>
+    <node x="0.0" y="268.0">org.openxsp.java.session.SessionControlMessageHeader</node>
+    <node x="296.0" y="268.0">org.openxsp.java.session.SessionControlMethodEnum</node>
+    <node x="807.7083333333333" y="91.0">org.openxsp.java.session.SessionControlMessgeImpl</node>
+    <node x="564.75" y="91.0">org.openxsp.java.session.SessionControlEndSession</node>
+    <node x="921.7708333333333" y="192.0">org.openxsp.java.session.SessionControlCreateSessionImpl</node>
+    <node x="569.8571428571428" y="269.1428571428571">org.openxsp.java.session.SessionControlHeaderField</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.openxsp.java.session.SessionControlUpdateSession" target="org.openxsp.java.session.SessionControlMessage">
+      <point x="0.0" y="-15.5" />
+      <point x="120.0" y="51.0" />
+      <point x="832.422619047619" y="51.0" />
+      <point x="-85.28571428571422" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlCreateSessionImpl" target="org.openxsp.java.session.SessionControlMessgeImpl">
+      <point x="-66.5" y="-15.5" />
+      <point x="988.2708333333333" y="172.0" />
+      <point x="936.0416666666666" y="172.0" />
+      <point x="18.333333333333343" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlEndSessionImpl" target="org.openxsp.java.session.SessionControlEndSession">
+      <point x="-61.25" y="-15.5" />
+      <point x="718.0208333333333" y="142.0" />
+      <point x="672.75" y="142.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlCreateSession" target="org.openxsp.java.session.SessionControlMessage">
+      <point x="0.0" y="-15.5" />
+      <point x="1173.1666666666665" y="71.0" />
+      <point x="946.1369047619047" y="71.0" />
+      <point x="28.428571428571445" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlCancelSessionImpl" target="org.openxsp.java.session.SessionControlCancelSession">
+      <point x="66.5" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlCancelSession" target="org.openxsp.java.session.SessionControlMessage">
+      <point x="0.0" y="-15.5" />
+      <point x="1444.6666666666665" y="61.0" />
+      <point x="974.5654761904761" y="61.0" />
+      <point x="56.85714285714289" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlAcceptSessionImpl" target="org.openxsp.java.session.SessionControlMessgeImpl">
+      <point x="66.75" y="-15.5" />
+      <point x="542.0" y="162.0" />
+      <point x="862.7083333333333" y="162.0" />
+      <point x="-54.99999999999999" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlConfirmSessionEstablishmentImpl" target="org.openxsp.java.session.SessionControlConfirmSessionEstablishment">
+      <point x="93.25" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlCancelSessionImpl" target="org.openxsp.java.session.SessionControlMessgeImpl">
+      <point x="-66.5" y="-15.5" />
+      <point x="1311.6666666666665" y="162.0" />
+      <point x="972.7083333333333" y="162.0" />
+      <point x="55.0" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlUpdateSessionImpl" target="org.openxsp.java.session.SessionControlUpdateSession">
+      <point x="-67.25" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlUpdateSessionImpl" target="org.openxsp.java.session.SessionControlMessgeImpl">
+      <point x="67.25" y="-15.5" />
+      <point x="254.5" y="152.0" />
+      <point x="826.0416666666666" y="152.0" />
+      <point x="-91.66666666666666" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlCreateSessionImpl" target="org.openxsp.java.session.SessionControlCreateSession">
+      <point x="66.5" y="-15.5" />
+      <point x="1121.2708333333333" y="172.0" />
+      <point x="1173.1666666666665" y="172.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlConfirmSessionEstablishment" target="org.openxsp.java.session.SessionControlMessage">
+      <point x="0.0" y="-15.5" />
+      <point x="1810.9166666666665" y="51.0" />
+      <point x="1002.9940476190475" y="51.0" />
+      <point x="85.28571428571422" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlMessgeImpl" target="org.openxsp.java.session.SessionControlMessage">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlAcceptSession" target="org.openxsp.java.session.SessionControlMessage">
+      <point x="0.0" y="-15.5" />
+      <point x="408.5" y="61.0" />
+      <point x="860.8511904761904" y="61.0" />
+      <point x="-56.85714285714289" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlEndSessionImpl" target="org.openxsp.java.session.SessionControlMessgeImpl">
+      <point x="61.25" y="-15.5" />
+      <point x="840.5208333333333" y="172.0" />
+      <point x="899.3749999999999" y="172.0" />
+      <point x="-18.33333333333333" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlConfirmSessionEstablishmentImpl" target="org.openxsp.java.session.SessionControlMessgeImpl">
+      <point x="-93.25" y="-15.5" />
+      <point x="1624.4166666666665" y="152.0" />
+      <point x="1009.3749999999999" y="152.0" />
+      <point x="91.66666666666666" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlAcceptSessionImpl" target="org.openxsp.java.session.SessionControlAcceptSession">
+      <point x="-66.75" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.openxsp.java.session.SessionControlEndSession" target="org.openxsp.java.session.SessionControlMessage">
+      <point x="0.0" y="-15.5" />
+      <point x="672.75" y="71.0" />
+      <point x="889.2797619047618" y="71.0" />
+      <point x="-28.428571428571445" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="709.8571428571428" y="114.14285714285722" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

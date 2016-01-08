@@ -1,0 +1,8 @@
+{
+				"kurento_address":"ws://kurento:8888/kurento",
+				"user_registry_event" : "eu.nubomedia.af.user_registry",
+				"service_registry_event" : "eu.nubomedia.af.service_registry",
+				"call_event" : "eu.nubomedia.af.kurento.call.ar",
+				"player_event":"eu.nubomedia.af.kurento.play"
+			}
+

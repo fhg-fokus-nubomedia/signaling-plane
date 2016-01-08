@@ -1,0 +1,7 @@
+{
+    "owner": "org.openxsp", 
+    "version": "0.1", 
+    "name": "lib-sip",
+    "auto-redeploy": true,
+    "worker": true
+}

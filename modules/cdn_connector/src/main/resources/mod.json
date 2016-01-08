@@ -1,0 +1,9 @@
+{
+    "owner": "org.openxsp", 
+    "version": "0.1", 
+    "name": "cdn_connector",
+    "main":"org.openxsp.cdn.connector.net.vertx.VertxHandler",
+    "includes": "org.openxsp~lib-sessioncontrol~0.1",
+    "preserve-cwd": true,
+    "auto-redeploy": true
+}

@@ -1,0 +1,7 @@
+{
+	"owner": "org.openxsp",
+	"name": "kurento_client",
+	"version": "0.1",
+	"main": "eu.nubomedia.af.kurento.net.vertx.VertxHandler",
+	"includes": "org.openxsp~lib-sessioncontrol~0.1"
+}

@@ -1,0 +1,13 @@
+{
+    "persistence_module_address":          "openxsp.mongopersistor",
+    "persistor_class_full_name":            "org.openxsp.user_registry.persistence.mongodb.UserRegistryPersistorMongo",
+    "persistor_class_operation_addresses":  {
+        "op_address_register_address":      "nubomedia.org.openxsp.user_registry.mongo_persistor.register_address",
+        "op_address_unregister_address":    "nubomedia.org.openxsp.user_registry.mongo_persistor.unregister_address",
+        "op_address_get_address":           "nubomedia.org.openxsp.user_registry.mongo_persistor.get_address",
+        "op_address_get_services":          "nubomedia.org.openxsp.user_registry.mongo_persistor.get_services",
+        "op_address_add_user_address":      "nubomedia.org.openxsp.user_registry.mongo_persistor.add_user",
+        "op_address_remove_user_address":   "nubomedia.org.openxsp.user_registry.mongo_persistor.remove_user"
+    },
+    "persistor_class_reset_user_db":        true
+}

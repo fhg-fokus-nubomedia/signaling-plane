@@ -1,0 +1,8 @@
+{
+    "owner": "org.openxsp", 
+    "version": "0.1", 
+    "name": "DeploymentManager",
+    "preserve-cwd":true,
+    "main":"org.openxsp.modules.DeploymentManager",
+    "bla":true
+}

@@ -1,0 +1,6 @@
+src/main/resources
+bin
+out/production/test
+out/test/test
+build/deps
+build/classes/main

@@ -1,0 +1,42 @@
+{
+	"owner":"org.openxsp",
+	"name":"lib-sip",	
+	"version":"0.1",
+	"dependencies": ["org.openxsp~lib-sip~0.1","org.openxsp~lib-sessioncontrol~0.1"],
+	"modules":[
+		{
+			"name":"org.openxsp~lib-sip~0.1",
+			"config":{
+				"imsDomain":"10.147.66.189",
+				"imsLocalInterface":"10.147.66.189",
+				"imsDisplayName":"5060",			
+				"imsRegister":"false",
+				"imsSubscribeToReg":"false",
+				"imsPrack":"false",
+				"imsDomain":"open-ims.test",
+				"imsLocalPort":"5060",
+				"imsPCSCFPort":"4060",
+				"imsICSCFPort":"5060",
+				"imsSCSCFPort":"6060",
+				"imsDisplayName":"alice1",
+				"imsRegisterTime":"3600",
+				"imsEnableLog":"true",								
+				"imsPrivateId":"alice1@open-ims.test",				 
+				"imsPCSCFAddress":"192.168.144.44",
+				"imsPublicId":"sip\:alice1@open-ims.test",
+				"imsPCSCFDiscoverFunction":"Fix IP"
+			}
+		}
+	]
+
+}
+
+
+
+
+
+
+
+
+
+

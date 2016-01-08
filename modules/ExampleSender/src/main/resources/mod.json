@@ -1,0 +1,7 @@
+{
+    "owner": "org.openxsp", 
+    "version": "0.1", 
+    "name": "ExampleSender",
+    "main":"org.openxsp.example.Sender",
+	"worker": false
+}

@@ -1,0 +1,15 @@
+{
+  "owner": "org.openxsp",
+  "name": "mod-mongo-persistor",
+  "version": "2.1.3",
+
+  "main": "org.vertx.mods.MongoPersistor",
+  "worker": true,
+  "multi-threaded": true,
+
+  "description":"MongoDB persistor module for Vert.x",
+  "licenses": ["The Apache Software License Version 2.0"],
+  "author": "purplefox",
+  "keywords": ["mongo", "mongodb", "database", "databases", "persistence", "json", "nosql"],
+  "homepage": "https://github.com/vert-x/mod-mongo-persistor"
+}

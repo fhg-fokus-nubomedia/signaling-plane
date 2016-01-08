@@ -1,0 +1,15 @@
+{
+    "address": "vertx.mongopersistor",
+    "host": "80.96.122.63",
+    "port": 27020,
+    "username": "",
+    "password": "",
+    "db_name": "test",
+    "pool_size": 10,
+    "use_ssl": false,
+    "read_preference": "primary",
+    "use_mongo_types": false,
+    "socket_timeout": 60000,
+    "auto_connect_retry": true
+}
+~         

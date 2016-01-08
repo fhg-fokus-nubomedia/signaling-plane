@@ -1,0 +1,17 @@
+{
+
+	"name":"openxsp_webrtc_cdn",
+	"owner":"org.openxsp",
+	"version":"0.1",
+	"modules":[
+		{
+			"name":"org.openxsp~cdn_connector~0.1",
+			"config":{
+				"kurento_address":"ws://kurento:8888/kurento"
+			}
+		}
+	],
+    "repositories": [
+        "./modules"
+    ]
+}

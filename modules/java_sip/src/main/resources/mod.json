@@ -1,0 +1,7 @@
+{
+    "owner": "org.openxsp",
+    "version": "0.1", 
+    "name": "java_sip",
+    "main": "org.openxsp.stack.Start",
+    "includes": "org.openxsp~lib-sip~0.1,org.openxsp~lib-sessioncontrol~0.1"
+}

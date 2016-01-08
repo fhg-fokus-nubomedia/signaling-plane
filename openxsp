@@ -1,0 +1,10 @@
+#! /bin/sh
+
+if [ "x$OPENXSP_HOME" = "x" ]; then
+  export OPENXSP_HOME=`dirname $0`
+fi
+
+export PYTHONPATH="${OPENXSP_HOME}"/lib:"${OPENXSP_HOME}"/sys-mods/io.vertx~lang-jython~2.1.0-CUSTOM-PYTHON-2.7/lib:"${CLASSPATH}"
+export JYTHONPATH="${OPENXSP_HOME}"/lib:"${OPENXSP_HOME}"/sys-mods/io.vertx~lang-jython~2.1.0-CUSTOM-PYTHON-2.7/lib:"${CLASSPATH}"
+
+exec python -m openxsp_cli.main $@

@@ -1,0 +1,7 @@
+{
+	"owner": "org.openxsp",
+	"name": "kurento_client",
+	"version": "0.1",
+	"main": "eu.nubomedia.af.kurento",
+	"includes": "org.openxsp~kurento_client~0.1"
+}

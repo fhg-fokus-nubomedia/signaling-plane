@@ -1,0 +1,25 @@
+{
+
+	"name":"openxsp_webrtc_kurento",
+	"owner":"org.openxsp",
+	"version":"0.1",
+	"modules":[
+		{
+			"name":"org.openxsp~kurento_client~0.1",
+			"config":{
+				"kurento_address":"ws://kurento:8888/kurento",
+				"user_registry_event" : "eu.nubomedia.af.user_registry",
+				"service_registry_event" : "eu.nubomedia.af.service_registry",
+				"call_event" : "eu.nubomedia.af.kurento.call.ar",
+				"player_event":"eu.nubomedia.af.kurento.play"
+			}
+		},
+		{
+			"name":"org.openxsp~webrtc~0.1",
+			"config":{
+				   "port":8080
+				}
+		}
+	]
+
+}

@@ -1,0 +1,28 @@
+{
+    "version": "0.1", 
+    "name": "nubomedia_signaling_plane", 
+    "dependencies": [
+        "org.openxsp~lib-sip~0.1", 
+        "org.openxsp~lib-sessioncontrol~0.1"
+    ], 
+    "owner": "org.openxsp", 
+    "repositories": [
+        "./modules"
+    ], 
+    "modules": [
+        {
+            "config": {
+                "domain": "kamailio-ims.org", 
+                "bind": "localhost", 
+                "global": {}, 
+                "ims_scscf": "13680", 
+                "ims_ip": "10.147.66.119", 
+                "ims_pcscf": "4060", 
+                "ims_icscf": "5060",  
+                "port": "5060"
+            }, 
+            "name": "org.openxsp~java_sip~0.1"
+        }
+    ], 
+    "global_config": {}
+}

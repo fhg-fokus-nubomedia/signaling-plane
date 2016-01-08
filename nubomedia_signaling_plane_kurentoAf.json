@@ -1,0 +1,25 @@
+{
+    "version": "0.1", 
+    "name": "nubomedia_signaling_plane", 
+    "dependencies": [
+        "org.openxsp~lib-sessioncontrol~0.1"
+    ], 
+    "owner": "org.openxsp", 
+    "repositories": [
+        "./modules"
+    ], 
+    "modules": [
+        {
+	    "name": "org.openxsp~kurento_client~0.1",
+            "config": {
+                "service_registry_event": "eu.nubomedia.af.service_registry", 
+                "global": {}, 
+                "user_registry_event": "eu.nubomedia.af.user_registry", 
+                "player_event": "eu.nubomedia.af.kurento.play", 
+                "call_event": "eu.nubomedia.af.kurento.call.ar", 
+                "kurento_address": "ws://80.96.122.69:8888/kurento"
+            }
+            
+        }
+    ]
+}

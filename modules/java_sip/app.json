@@ -1,0 +1,25 @@
+{
+
+	"name":"java_sip",
+	"owner":"org.openxsp",
+	"version":"0.1",
+	"dependencies": ["org.openxsp~lib-sip~0.1","org.openxsp~lib-sessioncontrol~0.1"],
+	"repositories":["/home/xsp/openxsp/modules"],
+	"modules":[
+		{
+			"name":"org.openxsp~java_sip~0.1",
+			"config":{
+				"bind":"10.147.66.189",
+				"port":"5060",
+				"domain":"kamailio-ims.org",
+				"ims_pcscf":"4060",
+				"ims_scscf":"6060",
+				"ims_icscf":"5060",
+				"ims_ip":"10.147.66.163",
+				"ims_domain":"kamailio-ims.org"
+
+								}
+		}
+	]
+
+}

@@ -1,0 +1,18 @@
+{
+	"Name":"OpenXSP",
+	"Path":"/opt/openxsp/openxsp/",
+        "Cluster_Host":"127.0.0.1",
+	"Cluster_Port":12345,
+	"Modules":[
+	
+		{
+			"Name":"java_coap",
+			"AbsolutePath":"/opt/openxsp/openxsp/modules/java_coap/",
+			"Nb_instances":"1",
+			"Config":
+			{
+                            "port": "5683"
+                        }
+		}
+	]
+}

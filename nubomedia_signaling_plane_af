@@ -1,0 +1,5 @@
+#! /bin/sh
+cd $(dirname $0)
+export OPENXSP_HOME=$(pwd)
+export PATH=${PATH}:${OPENXSP_HOME}
+exec openxsp runApp nubomedia_signaling_plane_kurentoAf.json

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en" ng-app="App">
+<head>
+<title>OpenXSP Deployment Manager</title>
+</head>
+<body ng-controller="AppController" >
+	<h1>Web Admin</h1>
+
+	<div ng-controller="DeploymentsController">
+		<h2>Active Deployments</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Module Name</th>
+					<th>Deployed</th>
+					<th>Actions</th>
+					<th>Deployments</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="deployment in deploymentMap | orderBy:name"
+					ng-click="loadConfigurationFromModule(deployment)">
+
+					<td>{{deployment.module_name}}</td>
+					<td>{{deployment.deployments.length}}</td>
+					<td>
+						<button type="button" ng-click="deploy(deployment, 1)">Deploy</button>
+						<button type="button" ng-click="deploy(deployment,-1)"
+							ng-show="deployment.deployments.length > 0">Undeploy</button>
+					</td>
+					
+					
+					<td >
+						<select id="deployment.module_name" ng-model ="deploymentSelection" ng-init="getDeployments(deployment.deployments, this)" ng-change="setSelectedDeployment(deployment,this)" ></select>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Configuration</h3>
+		<textarea  id="config" ng-model="moduleconfig" cols="60" rows="5"> </textarea>
+		<br />
+		<h3>Upload module</h3>
+		<br /> <input type="file" id="fileupload" onchange="setUpload(this);"
+			name="files[]" multiple />
+		<button type="button" ng-click="upload()">Upload</button>
+
+	</div>
+
+	<script type="text/javascript"
+		src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+	<script type="text/javascript" src="scripts/sockjs-0.3.4.min.js"></script>
+	<script type="text/javascript" src="scripts/vertxbus.js"></script>
+
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/controllers.js"></script>
+	<script type="text/javascript" src="scripts/model.js"></script>
+
+
+	<script>
+		var fileToUpload;
+
+		function setUpload(input) {
+			if (input.files && input.files[0]) {
+				fileToUpload = input.files[0];
+			}
+		}
+
+		function handleConfigFileSelect(evt) {
+			evt.stopPropagation();
+			evt.preventDefault();
+
+			var files = evt.dataTransfer.files; // FileList object.
+
+			// files is a FileList of File objects. List some properties.
+			var output = [];
+			for (var i = 0, f; f = files[i]; i++) {
+
+				console.log(f);
+
+				var reader = new FileReader();
+
+				reader.onload = function(e) {
+					var text = reader.result;
+					document.getElementById('config').value = text;
+				}
+
+				reader.readAsText(f);
+			}
+		}
+
+		
+		function handleFileSelect(evt) {
+
+			console.log("Handle file selected");
+			evt.stopPropagation();
+			evt.preventDefault();
+
+			var files = evt.dataTransfer.files; // FileList object.
+
+			// files is a FileList of File objects. List some properties.
+			var output = [];
+			for (var i = 0, f; f = files[i]; i++) {
+
+				console.log(f);
+
+				document.getElementById('config').value = f;
+
+			}
+			
+		}
+
+		function handleDragOver(evt) {
+			evt.stopPropagation();
+			evt.preventDefault();
+			evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+		}
+
+		// Setup the dnd listeners.
+		var configField = document.getElementById("config");
+		configField.addEventListener('dragover', handleDragOver, false);
+		configField.addEventListener('drop', handleConfigFileSelect, false);
+		
+		function getDeployments(deployments, elementId){
+			console.log("bla")
+		}
+
+		/*
+		var uploadField = document.getElementById("uploadfield");
+		uploadField.addEventListener('dragover', handleDragOver, false);
+		uploadField.addEventListener('drop', handleZipFileSelect, false);
+		*/ 
+	</script>
+	
+	<!--
+
+		<div>
+			<h2>Event Log</h2>
+			<table ng-controller="EventsController">
+				<thead>
+					<tr>
+						<th>Event</th>
+						<th>Date/Time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="event in events">
+						<td>{{event.text}}</td>
+						<td>{{event.datetime}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+-->
+
+
+</body>
+</html>

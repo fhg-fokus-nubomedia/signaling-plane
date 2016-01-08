@@ -1,0 +1,70 @@
+#! /bin/sh
+export OPENXSP_HOME=$(pwd)
+export PATH=${PATH}:${OPENXSP_HOME}
+
+                echo "compiling modules"
+
+                cd modules
+                cd lib-sessioncontrol
+                echo
+                echo "compiling lib-sessioncontrol"
+		openxsp linkModDeps
+                ./gradlew compileJava
+                cd ..
+                cd ..
+
+                cd modules
+                cd lib-sip
+                echo
+                echo "Compiling SIP stack"
+                openxsp linkModDeps
+                ./gradlew compileJava
+                cd ..
+                cd ..
+
+		cd modules
+                cd java_sip
+                echo
+                echo "Compiling IMS connector"
+                openxsp linkModDeps
+                ./gradlew compileJava
+                cd ..
+                cd ..
+
+		cd modules
+                cd kurento_client
+                echo
+                echo "Compiling Kurento AF module"
+                openxsp linkModDeps
+                ./gradlew
+                cd ..
+                cd ..
+
+		cd modules
+                cd mod-mongo-persistor
+                echo
+                echo "mongo db persistor"
+                openxsp linkModDeps
+                ./gradlew
+                cd ..
+                cd ..
+
+		cd modules
+                cd nubo_user_registry
+                echo
+                echo "Compiling User Registry Module"
+                openxsp linkModDeps
+                ./gradlew
+                cd ..
+                cd ..
+
+		cd modules
+                cd DeploymentManager
+                echo
+                echo "Compiling Module Container"
+                openxsp linkModDeps
+                ./gradlew
+                cd ..
+                cd ..
+
+		

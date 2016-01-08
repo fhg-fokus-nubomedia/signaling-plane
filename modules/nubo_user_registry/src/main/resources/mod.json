@@ -1,0 +1,6 @@
+{
+	"owner": "org.openxsp",
+	"name": "nubo_user_registry",
+	"version": "0.1",
+	"main": "nubomedia.org.openxsp.user_registry.main.UserRegistry"
+}
